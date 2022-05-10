@@ -9,6 +9,8 @@ lazy val root = (project in file("."))
 libraryDependencies += "org.apache.spark" %% "spark-sql" % "3.2.1"
 
 ThisBuild / organization := "adam"
+libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.12"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.12" % "test"
 
 enablePlugins(DockerPlugin)
 
